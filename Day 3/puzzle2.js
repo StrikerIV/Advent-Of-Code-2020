@@ -29,9 +29,20 @@ let arrayLength = slopeArray.length
 
 for (row = 0; row != arrayLength; row++) {
     column = column % 31
+    if (row1 > 323) return
     if (slopeArray[row][column] === "#") treeCount++
-    column += 3
+    column += 1
+    //column += 3
+    //column += 5
+    //column += 7
+    //row++
 }
 
 console.log(treeCount)
+
+//uncommet column values to get tree counts for all slopes
+//multiply treeCount values together to get part 2 solution
+
+
+
 
